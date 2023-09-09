@@ -1,1 +1,35 @@
-
+TP Clave Principal
+PARTE 1: Selección de Claves
+Recordemos...
+Súper Clave: Cualquier conjunto de campos (Atributos) que sirve para identificar unívocamente a cada registro de la
+tabla.
+Clave Candidata: Cada una de la súper claves que no comparten campos (atributos) entre las claves.
+Clave Primaria (Primary Key): Es la clave candidata seleccionada por el diseñador de la Base de Datos.
+En cada ejercicio se toma una base de datos y se presenta una tabla de la base, entre paréntesis se indica el tipo de
+dato de cada campo. Para cada ejercicio, indicar dos (2) claves candidatas, indicando el/los campos que componen
+cada clave. Seleccionar la clave principal de la tabla, indicar si se requiere un nuevo campo "ID" como clave principal.
+1) En la base de datos de una empresa de venta de electrodomésticos, la tabla de clientes de almacena los siguientes
+datos: Nombre del cliente (texto), DNI (texto), Calle (texto), Numero (texto), Piso (entero), Dpto. (texto), Teléfono
+(texto).
+2) En la base de datos de una empresa de venta de electrodomésticos, la tabla de productos almacena los siguientes
+datos: Denominación (texto), Descripción (texto), Marca (texto), Modelo (texto), Precio unitario (real), Largo (entero),
+Ancho (entero), Alto (entero), Peso (entero).
+3) En la base de datos de un programa de química, la tabla de elementos químicos almacena los siguientes datos
+(https://es.wikipedia.org/wiki/Elemento_qu%C3%ADmico): Número Atómico (entero), Símbolo químico (texto),
+Nombre (texto), Grupo (entero), Periodo (entero), Tipo (texto), Peso Atómico (real), Densidad (real), Punto de fusión
+(real), Punto de ebullición (real).
+4) En la base de datos de un juego por computadora, la tabla de monstruos almacena los siguientes datos: Raza
+(texto), Descripción (texto), Vida (entero), Arma (texto), cantidad de ataques (entero), ambiente (texto), frecuencia de
+encuentro (real), cantidad de monstruos por encuentro (entero).
+5) En la base de datos de una fábrica de galletitas, la tabla de productos almacena los siguientes datos: Nombre
+(texto), Descripción (texto), Tipo de embase (texto), Peso (entero), Lote (entero), Fecha (texto), stock (entero).
+Parte 2: Implementación en SQLite.
+Recordemos el comando de SQL para crear tablas e indicar la clave principal (primary key).
+Si la clave principal es un solo campo:
+CREATE TABLE nombre_tabla (campo1 tipo_de_dato PRIMARY KEY, campo2 tipo_de_dato,
+campo3 tipo_de_dato ....);
+Si la clave principal está compuesta por más de un campo:
+CREATE TABLE nombre_tabla (campo1 tipo_de_dato, campo2 tipo_de_dato, campo3
+tipo_de_dato, ...., PRIMARY KEY(campo1, campo2, .... ));
+Para crear cada uno de los ejercicios de la 1er parte, escribir el comando en SQL requerido para crear la tabla, incluir la
+indicación de la clave princip
